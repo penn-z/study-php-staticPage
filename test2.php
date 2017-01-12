@@ -7,4 +7,5 @@
     ob_start();
     echo 'just 2';
     file_put_contents('./make/test2.html', ob_get_clean()); //可知，ob_get_clean() == ob_get_contents() + ob_clean()
+    require_once './make/test2.html';
 ?>
